@@ -1,0 +1,60 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<cv>
+	<personal_details>
+		<name>
+			<firstname>Tasharn</firstname>
+			<surname>Vidal Brown</surname>
+		</name>
+		<email>tasharn.b@gmail.com</email>
+		<phone_number>07982 729 420</phone_number>
+		<address>
+			<town>Catford</town>
+			<city>London</city>
+			<postcode>SE6 2HW</postcode>
+		</address>
+	</personal_details>
+	<experience />
+	<education>
+		<university>
+			<name>University of Greenwich</name>
+			<course_studied>Computer Science</course_studied>
+			<grade type="Bachelor's">2:1</grade>
+			<date_attended>September 2012 - June 2015</date_attended>
+		</university>
+		<college>
+			<name>Christ the King 6th Form College</name>
+			<courses_studied type="A Levels">
+				<course>
+					<name>Information Technology (IT)</name>
+					<grade>B</grade>
+				</course>
+				<course>
+					<name>Mathematics and Statistics</name>
+					<grade>C</grade>
+				</course>
+				<course>
+					<name>Music Technology</name>
+					<grade>C</grade>
+				</course>
+			</courses_studied>
+			<date_attended>2010 - 2012</date_attended>
+		</college>
+		<secondary_school>
+			<name>Bonus Pastor Catholic College</name>
+			<notable_subjects>
+				<subject>
+					<name>Business, Retail and Administration</name>
+					<grade type="BTEC">Merit</grade>
+				</subject>
+				<subject>
+					<name>Mathematics</name>
+					<grade type="GCSE">B</grade>
+				</subject>
+				<subject>
+					<name>ICT</name>
+					<grade type="GCSE">B</grade>
+				</subject>
+			</notable_subjects>
+		</secondary_school>
+	</education>
+</cv>
