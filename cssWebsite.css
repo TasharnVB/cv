@@ -1,0 +1,21 @@
+body {
+    font-family: sans-serif;
+}
+
+input, textarea {
+    display: block;
+}
+
+.contactFormInputs, .todoFormInputs {
+    display: block;
+}
+
+nav ul {
+    list-style-type: none;
+    margin: 0;
+    padding: 0;
+}
+
+nav ul li {
+    display: inline;
+}

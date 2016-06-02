@@ -4,27 +4,41 @@
     <head>
 
         <meta charset="UTF-8">
-        <title>Add To Do Item</title>
+        <title>Add To-Do Item</title>
+
+        <link rel="stylesheet" type="text/css" href="cssWebsite.css" />
 
     </head>
 
     <body>
-        <!-- Unfinished and untested -->
-        <h1>Add To-Do Item</h1>
-        <!-- Link not correct. Check Thursday Morning -->
-        <form action="http://lacedeamon.spartaglobal.com/todos" method="post">
 
-            <label for="title">Item:</label>
-            <input type="text" name="title" id="title">
+        <main>
 
-            <!-- Note: Date tag does not work properly in Firefox -->
-            <!-- Date tag gives dats in the yyyy-mm-dd format -->
-            <label for="due">Date:</label>
-            <input type="date" name="due" id="due">
+            <h1>Add a To-Do Item</h1>
 
-            <input type="submit" value="Save New Item" id="submit">
+            <form action="http://lacedeamon.spartaglobal.com/todos" method="post">
 
-        </form>
+                <div class="todoFormInputs">
+                    <label for="title">Item:</label>
+                    <input type="text" name="title" id="title">
+                </div>
+
+                <br>
+
+                <!-- Note: Date tag does not work properly in Firefox -->
+                <!-- Date tag gives dats in the yyyy-mm-dd format -->
+                <div class="todoFormInputs">
+                    <label for="due">Date:</label>
+                    <input type="date" name="due" id="due">
+                </div>
+
+                <br>
+
+                <input type="submit" value="Save New Item" id="submit">
+
+            </form>
+
+        </main>
 
     </body>
 

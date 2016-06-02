@@ -10,127 +10,138 @@
 		<meta name="author" content="Tasharn Vidal Brown">
 		<meta name="keywords" content="Tasharn Vidal Brown, CV" />
 
-		<link rel="stylesheet" type="text/css" href="cssCV.css" />
+		<link rel="stylesheet" type="text/css" href="cssWebsite.css" />
 
 	</head>
 
 	<body>
 
-		<section>
+		<section id="top">
 
-            <header>
-                <h2>Contents</h2>
-            </header>
+            <h2>Navigation</h2>
 
-			<ul>
-				<li><a href="#details">Personal Details</a></li>
-				<li><a href="#profile">Personal Profile</a></li>
-				<li><a href="#experience">Experience</a></li>
-				<li><a href="#education">Education</a>
-					<ul>
-						<li><a href="#university">University</a></li>
-						<li><a href="#college">College</a></li>
-						<li><a href="#secondary">Secondary School</a></li>
-					</ul>
-				</li>
-                <li><a href="#interests">Interests</a></li>
-			</ul>
+            <nav>
+                <ul>
+                    <li><a href="#details">Personal Details</a></li>
+                    <li><a href="#profile">Personal Profile</a></li>
+                    <li><a href="#experience">Experience</a></li>
+                    <li><a href="#education">Education</a></li>
+                    <li><a href="#interests">Interests</a></li>
+                </ul>
+            </nav>
 
 		</section>
 
-        <header>
+        <main id="cv">
+
             <h1>Tasharn Vidal Brown</h1>
-        </header>
 
-		<section id="details">
+            <section id="details">
 
-			<h2>Personal Details</h2>
+                <h2>Personal Details</h2>
 
-			<p>Email: tasharn.b@gmail.com</p>
-			<p>07982 729 420</p>
-			<p>Town: Catford, City: London, Postcode: SE6 2HW</p>
+                <p>Email: tasharn.b@gmail.com</p>
+                <p>07982 729 420</p>
+                <p>Town: Catford, City: London, Postcode: SE6 2HW</p>
 
-		</section>
+            </section>
 
-		<section id="profile">
+            <section id="profile">
 
-			<h2>Personal Profile</h2>
+                <h2>Personal Profile</h2>
 
-			<p>
-			I am a recent BSc (Hons) Computer Science graduate who has achieved a 2:1 degree.
-			I can pick up new ideas and concepts very quickly which has been an invaluable skill in past years.
-			I have organisational and time management skills, which I have successfully used and improved during my studies at university.
-			I enjoy problem solving and constantly exhibited my problem solving abilities while doing my university courses.
-			I have also facilitated in the creation and publication of two animation films on YouTube, one of which resulted in receiving an award.
-			</p>
+                <p>
+                I am a recent BSc (Hons) Computer Science graduate who has achieved a 2:1 degree.
+                I can pick up new ideas and concepts very quickly which has been an invaluable skill in past years.
+                I have organisational and time management skills, which I have successfully used and improved during my studies at university.
+                I enjoy problem solving and constantly exhibited my problem solving abilities while doing my university courses.
+                I have also facilitated in the creation and publication of two animation films on YouTube, one of which resulted in receiving an award.
+                </p>
 
-		</section>
+            </section>
 
-		<section id="experience">
+            <section id="experience">
 
-			<h2>Experience</h2>
+                <h2>Experience</h2>
 
-			<p>N/A</p>
+                <p>N/A</p>
 
-		</section>
+            </section>
 
-		<section id="education">
+            <section id="education">
 
-			<h2>Education</h2>
+                <h2>Education</h2>
 
-			<div id="university">
-				<h3>University of Greenwich</h3>
-                <p>September 2012 - June 2015</p>
-				<p>2:1 Bachelor's Degree in Computer Science</p>
-			</div>
+                <section>
 
-			<div id="college">
-				<h3>Christ the King 6th Form College</h3>
-                <p>2010 - 2012</p>
-				<p>A Levels in:</p>
-				<ul>
-					<li>Information Technology - B</li>
-					<li>Mathematics and Statistics - C</li>
-					<li>Music Technology - C</li>
-				</ul>
-			</div>
+                    <div id="university">
+                        <h3>University of Greenwich</h3>
+                        <p>September 2012 - June 2015</p>
+                        <p>2:1 Bachelor's Degree in Computer Science</p>
+                        <p>Modules taken:</p>
+                    </div>
 
-			<div id="secondary">
-				<h3>Bonus Pastor Catholic College</h3>
-                <p>2005 - 2010</p>
-				<p>BTEC in Business, Retail and Administration (Merit) and 11 GCSEs, including 8 grade B-C, including Maths (B), Statistics (B) and IT</p>
-			</div>
+                </section>
 
-		</section>
+                <section>
 
-        <section id="interests">
+                    <div id="college">
+                        <h3>Christ the King 6th Form College</h3>
+                        <p>2010 - 2012</p>
+                        <p>A Levels in:</p>
+                        <ul>
+                            <li>Information Technology - B</li>
+                            <li>Mathematics and Statistics - C</li>
+                            <li>Music Technology - C</li>
+                        </ul>
+                    </div>
 
-            <h2>Interests</h2>
+                </section>
 
-            <p>
-                I enjoy creating 3D scenes using the 3D animation and modelling tool, Blender.
-                My introduction to Blender resulted in me gaining an interest in animation both 3D and 2D animation.
-                A few months after my initial introduction to Blender, I worked on a short animated video as part of a
-                team for the animation competition, Animation12. The video ended up getting an award and can be viewed
-                here:
-            </p>
-            <input type="button" value="Toggle Video Visibility" id="btnTuring" onclick="toggleVideoVisibility(this)">
-            <iframe id="vidTuring" width="560" height="315" src="https://www.youtube.com/embed/NxREOaqARno" allowfullscreen style="display:none"></iframe>
-            <p>
-                Months after this, I also worked with a team at 3Dami 2012 to produce
-                this short animated video:
-            </p>
-            <input type="button" value="Toggle Video Visibility" id="btn3Dami" onclick="toggleVideoVisibility(this)">
-            <iframe id="vid3Dami" width="560" height="315" src="https://www.youtube.com/embed/_l34KV8Px3o" allowfullscreen style="display:none"></iframe>
-            <p>
-                I also enjoy playing multiple different genres
-                of music on my acoustic guitar and I like reading any type of fiction although I do not currently have
-                a favourite author.
-            </p>
+                <section>
 
-        </section>
+                    <div id="secondary">
+                        <h3>Bonus Pastor Catholic College</h3>
+                        <p>2005 - 2010</p>
+                        <p>BTEC in Business, Retail and Administration (Merit) and 11 GCSEs, including 8 grade B-C, including Maths (B), Statistics (B) and IT</p>
+                    </div>
 
-        <script>
+                </section>
+
+            </section>
+
+            <section id="interests">
+
+                <h2>Interests</h2>
+
+                <p>
+                    I enjoy creating 3D scenes using the 3D animation and modelling tool, Blender.
+                    My introduction to Blender resulted in me gaining an interest in animation both 3D and 2D animation.
+                    A few months after my initial introduction to Blender, I worked on a short animated video as part of a
+                    team for the animation competition, Animation12. The video ended up getting an award and can be viewed
+                    here:
+                </p>
+                <input type="button" value="Toggle Turing Video Visibility" id="btnTuring" onclick="toggleVideoVisibility(this)">
+                <iframe id="vidTuring" width="560" height="315" src="https://www.youtube.com/embed/NxREOaqARno" allowfullscreen style="display:none"></iframe>
+                <p>
+                    Months after this, I also worked with a team at 3Dami 2012 to produce
+                    this short animated video:
+                </p>
+                <input type="button" value="Toggle 3Dami Video Visibility" id="btn3Dami" onclick="toggleVideoVisibility(this)">
+                <iframe id="vid3Dami" width="560" height="315" src="https://www.youtube.com/embed/_l34KV8Px3o" allowfullscreen style="display:none"></iframe>
+                <p>
+                    I also enjoy playing multiple different genres
+                    of music on my acoustic guitar and I like reading any type of fiction although I do not currently have
+                    a favourite author.
+                </p>
+
+            </section>
+
+            <a href="#top">Back to the top</a>
+
+        </main>
+
+        <script type="text/javascript">
 
             function toggleVideoVisibility(test) {
                 var videoNode;
