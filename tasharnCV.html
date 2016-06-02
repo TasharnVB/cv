@@ -3,12 +3,8 @@
 
 	<head>
 
-		<title>Tasharn Vidal Brown's CV</title>
-
 		<meta charset="UTF-8">
-		<meta name="description" content="Tasharn Vidal Brown's CV">
-		<meta name="author" content="Tasharn Vidal Brown">
-		<meta name="keywords" content="Tasharn Vidal Brown, CV" />
+        <title>Tasharn Vidal Brown's CV</title>
 
 		<link rel="stylesheet" type="text/css" href="cssWebsite.css" />
 
@@ -20,7 +16,7 @@
 
             <h2>Navigation</h2>
 
-            <nav>
+            <nav id="cvNav">
                 <ul>
                     <li><a href="#details">Personal Details</a></li>
                     <li><a href="#profile">Personal Profile</a></li>
@@ -122,13 +118,13 @@
                     here:
                 </p>
                 <input type="button" value="Toggle Turing Video Visibility" id="btnTuring" onclick="toggleVideoVisibility(this)">
-                <iframe id="vidTuring" width="560" height="315" src="https://www.youtube.com/embed/NxREOaqARno" allowfullscreen style="display:none"></iframe>
+                <iframe id="vidTuring" class="bVideos" src="https://www.youtube.com/embed/NxREOaqARno" style="display:none" allowfullscreen></iframe>
                 <p>
                     Months after this, I also worked with a team at 3Dami 2012 to produce
                     this short animated video:
                 </p>
                 <input type="button" value="Toggle 3Dami Video Visibility" id="btn3Dami" onclick="toggleVideoVisibility(this)">
-                <iframe id="vid3Dami" width="560" height="315" src="https://www.youtube.com/embed/_l34KV8Px3o" allowfullscreen style="display:none"></iframe>
+                <iframe id="vid3Dami" class="bVideos" src="https://www.youtube.com/embed/_l34KV8Px3o" style="display:none" allowfullscreen></iframe>
                 <p>
                     I also enjoy playing multiple different genres
                     of music on my acoustic guitar and I like reading any type of fiction although I do not currently have
@@ -140,7 +136,7 @@
             <a href="#top">Back to the top</a>
 
         </main>
-
+        
         <script type="text/javascript">
 
             function toggleVideoVisibility(test) {
@@ -159,7 +155,7 @@
                 if (videoNode.style.display != "none") {
                     videoNode.style.display = "none";
                 } else {
-                    videoNode.style.display = "block"
+                    videoNode.style.display = "block";
                 }
             }
 
