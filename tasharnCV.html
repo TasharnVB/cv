@@ -114,12 +114,14 @@
                 team for the animation competition, Animation12. The video ended up getting an award and can be viewed
                 here:
             </p>
-            <iframe width="560" height="315" src="https://www.youtube.com/embed/NxREOaqARno" allowfullscreen></iframe>
+            <input type="button" value="Toggle Video Visibility" id="btnTuring" onclick="toggleVideoVisibility(this)">
+            <iframe id="vidTuring" width="560" height="315" src="https://www.youtube.com/embed/NxREOaqARno" allowfullscreen style="display:none"></iframe>
             <p>
                 Months after this, I also worked with a team at 3Dami 2012 to produce
-                this short animated video: http://youtu.be/_l34KV8Px3o.
+                this short animated video:
             </p>
-            <iframe width="560" height="315" src="https://www.youtube.com/embed/_l34KV8Px3o" allowfullscreen></iframe>
+            <input type="button" value="Toggle Video Visibility" id="btn3Dami" onclick="toggleVideoVisibility(this)">
+            <iframe id="vid3Dami" width="560" height="315" src="https://www.youtube.com/embed/_l34KV8Px3o" allowfullscreen style="display:none"></iframe>
             <p>
                 I also enjoy playing multiple different genres
                 of music on my acoustic guitar and I like reading any type of fiction although I do not currently have
@@ -127,6 +129,30 @@
             </p>
 
         </section>
+
+        <script>
+
+            function toggleVideoVisibility(test) {
+                var videoNode;
+                switch (test) {
+                    case btnTuring:
+                        videoNode = document.getElementById("vidTuring");
+                        break;
+                    case btn3Dami:
+                        videoNode = document.getElementById("vid3Dami");
+                        break;
+                    default:
+                        videoNode = document.getElementById("vidTuring");
+                        break;
+                }
+                if (videoNode.style.display != "none") {
+                    videoNode.style.display = "none";
+                } else {
+                    videoNode.style.display = "block"
+                }
+            }
+
+        </script>
 
 	</body>
 
