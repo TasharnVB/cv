@@ -1,5 +1,52 @@
+/* Entire body */
 body {
     font-family: sans-serif;
+    margin: 0px;
+    /*background-color: #8D969B;*/
+}
+
+/* Main header */
+#main-header {
+    background-color: #80B3FF;
+    padding: 10px 10px;
+    text-align: center;
+}
+
+#details {
+    margin: 10px;
+}
+
+#details p {
+    display: inline;
+    font-weight: bold;
+}
+
+#details p:after {
+    content: " | ";
+}
+
+#details p:last-child:after {
+    content: "";
+}
+
+/* Main part of CV */
+#cv {
+    padding: 10px 20px 20px 20px;
+    background-color: #BFB7AE;
+}
+
+.main-sections {
+    background-color: #E6E7E8;
+    padding: 5px 10px;
+}
+
+/* Personal Profile */
+#profile h2, p {
+    margin: 5px 0px;
+}
+
+#profile h2 {
+    margin: 5px 0px 10px 0px;
 }
 
 input, textarea {
@@ -10,17 +57,25 @@ input, textarea {
     display: block;
 }
 
-#cvNav ul {
+#cv-nav ul {
     list-style-type: none;
     margin: 0;
     padding: 0;
 }
 
-#cvNav ul li {
+#cv-nav ul li {
     display: inline;
 }
 
-.bVideos {
+#cv-nav ul li:after {
+    content: " | ";
+}
+
+#cv-nav ul li:last-child:after {
+    content: "";
+}
+
+.bVideo {
     width: 560px;
     height: 315px;
     border: none;

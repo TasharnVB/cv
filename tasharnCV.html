@@ -12,124 +12,159 @@
 
 	<body>
 
-		<section id="top">
+        <main>
+            <!-- CV header -->
+            <header id="main-header">
 
-            <h2>Navigation</h2>
+                <h1 id="title">Tasharn Vidal Brown</h1>
 
-            <nav id="cvNav">
-                <ul>
-                    <li><a href="#details">Personal Details</a></li>
-                    <li><a href="#profile">Personal Profile</a></li>
-                    <li><a href="#experience">Experience</a></li>
-                    <li><a href="#education">Education</a></li>
-                    <li><a href="#interests">Interests</a></li>
-                </ul>
-            </nav>
-
-		</section>
-
-        <main id="cv">
-
-            <h1>Tasharn Vidal Brown</h1>
-
-            <section id="details">
-
-                <h2>Personal Details</h2>
-
-                <p>Email: tasharn.b@gmail.com</p>
-                <p>07982 729 420</p>
-                <p>Town: Catford, City: London, Postcode: SE6 2HW</p>
-
-            </section>
-
-            <section id="profile">
-
-                <h2>Personal Profile</h2>
-
-                <p>
-                I am a recent BSc (Hons) Computer Science graduate who has achieved a 2:1 degree.
-                I can pick up new ideas and concepts very quickly which has been an invaluable skill in past years.
-                I have organisational and time management skills, which I have successfully used and improved during my studies at university.
-                I enjoy problem solving and constantly exhibited my problem solving abilities while doing my university courses.
-                I have also facilitated in the creation and publication of two animation films on YouTube, one of which resulted in receiving an award.
-                </p>
-
-            </section>
-
-            <section id="experience">
-
-                <h2>Experience</h2>
-
-                <p>N/A</p>
-
-            </section>
-
-            <section id="education">
-                <!-- Put these in a list -->
-                <h2>Education</h2>
-
-                <section>
-
-                    <div id="university">
-                        <h3>University of Greenwich</h3>
-                        <p>September 2012 - June 2015</p>
-                        <p>2:1 Bachelor's Degree in Computer Science</p>
-                        <p>Modules taken:</p>
-                    </div>
+                <section id="details">
+                    <!-- Maybe change this to an address tag -->
+                    <p>Email: tasharn.b@gmail.com</p>
+                    <p>07982 729 420</p>
+                    <p>Town: Catford, City: London</p>
 
                 </section>
 
-                <section>
+                <nav id="cv-nav">
+                    <ul>
+                        <li><a href="#details">Personal Details</a></li>
+                        <li><a href="#profile">Personal Profile</a></li>
+                        <li><a href="#experience">Experience</a></li>
+                        <li><a href="#education">Education</a></li>
+                        <li><a href="#interests">Interests</a></li>
+                    </ul>
+                </nav>
 
-                    <div id="college">
-                        <h3>Christ the King 6th Form College</h3>
-                        <p>2010 - 2012</p>
-                        <p>A Levels in:</p>
-                        <ul>
-                            <li>Information Technology - B</li>
-                            <li>Mathematics and Statistics - C</li>
-                            <li>Music Technology - C</li>
-                        </ul>
-                    </div>
+            </header>
+
+            <!-- Main part of the CV -->
+            <section id="cv">
+
+                <!-- Personal Profile -->
+                <section id="profile" class="main-sections">
+
+                    <h2>Personal Profile</h2>
+
+                    <p>
+                    I am a recent BSc (Hons) Computer Science graduate who has achieved a 2:1 degree.
+                    I can pick up new ideas and concepts very quickly which has been an invaluable skill in past years.
+                    I have organisational and time management skills, which I have successfully used and improved during my studies at university.
+                    I enjoy problem solving and constantly exhibited my problem solving abilities while doing my university courses.
+                    I have also facilitated in the creation and publication of two animation films on YouTube, one of which resulted in receiving an award.
+                    </p>
 
                 </section>
 
-                <section>
+                <!-- Work Experience -->
+                <section id="experience" class="main-sections">
 
-                    <div id="secondary">
-                        <h3>Bonus Pastor Catholic College</h3>
-                        <p>2005 - 2010</p>
-                        <p>BTEC in Business, Retail and Administration (Merit) and 11 GCSEs, including 8 grade B-C, including Maths (B), Statistics (B) and IT</p>
-                    </div>
+                    <h2>Experience</h2>
+
+                    <p>N/A</p>
 
                 </section>
 
-            </section>
+                <!-- Education -->
+                <section id="education" class="main-sections">
 
-            <section id="interests">
+                    <h2>Education</h2>
 
-                <h2>Interests</h2>
+                    <section>
 
-                <p>
-                    I enjoy creating 3D scenes using the 3D animation and modelling tool, Blender.
-                    My introduction to Blender resulted in me gaining an interest in animation both 3D and 2D animation.
-                    A few months after my initial introduction to Blender, I worked on a short animated video as part of a
-                    team for the animation competition, Animation12. The video ended up getting an award and can be viewed
-                    here:
-                </p>
-                <input type="button" value="Toggle Turing Video Visibility" id="btnTuring" onclick="toggleVideoVisibility(this)">
-                <iframe id="vidTuring" class="bVideos" src="https://www.youtube.com/embed/NxREOaqARno" style="display:none" allowfullscreen></iframe>
-                <p>
-                    Months after this, I also worked with a team at 3Dami 2012 to produce
-                    this short animated video:
-                </p>
-                <input type="button" value="Toggle 3Dami Video Visibility" id="btn3Dami" onclick="toggleVideoVisibility(this)">
-                <iframe id="vid3Dami" class="bVideos" src="https://www.youtube.com/embed/_l34KV8Px3o" style="display:none" allowfullscreen></iframe>
-                <p>
-                    I also enjoy playing multiple different genres
-                    of music on my acoustic guitar and I like reading any type of fiction although I do not currently have
-                    a favourite author.
-                </p>
+                        <div id="university">
+                            <h3>University of Greenwich</h3>
+                            <p>September 2012 - June 2015</p>
+                            <p>2:1 Bachelor's Degree in Computer Science</p>
+
+                            <h3>Modules taken:</h3>
+
+                            <p>Final year project: "Using Scheduling Algorithms to Automate the Process of Planning Through a Web Application"</p>
+                            <h4>3rd Year:</h4>
+                            <ul>
+                                <li>3D Computer Graphics</li>
+                                <li>Service-Oriented Web Applications</li>
+                                <li>User Interface Design</li>
+                                <li>Web Application Development</li>
+                            </ul>
+                            <h4>2nd Year:</h4>
+                            <ul>
+                                <li>Operating Systems</li>
+                                <li>Systems Programming</li>
+                                <li>Application &amp; Web Development</li>
+                                <li>Computer Algorithms and Modelling</li>
+                                <li>Systems Development Project</li>
+                                <li>Professionalism in the IT Industry</li>
+                                <li>Advanced Programming</li>
+                            </ul>
+                            <h4>1st Year:</h4>
+                            <ul>
+                                <li>Computer Programming</li>
+                                <li>Analytical Methods for Computing</li>
+                                <li>Logical Foundations</li>
+                                <li>System Building</li>
+                                <li>Communication Systems</li>
+                                <li>Computer Systems Architectures</li>
+                            </ul>
+
+                        </div>
+
+                    </section>
+
+                    <section>
+
+                        <div id="college">
+                            <h3>Christ the King 6th Form College</h3>
+                            <p>2010 - 2012</p>
+                            <p>A Levels in:</p>
+                            <ul>
+                                <li>Information Technology - B</li>
+                                <li>Mathematics and Statistics - C</li>
+                                <li>Music Technology - C</li>
+                            </ul>
+                        </div>
+
+                    </section>
+
+                    <section>
+
+                        <div id="secondary">
+                            <h3>Bonus Pastor Catholic College</h3>
+                            <p>2005 - 2010</p>
+                            <p>BTEC in Business, Retail and Administration (Merit) and 11 GCSEs, including 8 grade B-C, including Maths (B), Statistics (B) and IT</p>
+                        </div>
+
+                    </section>
+
+                </section>
+
+                <!-- Interests -->
+                <section id="interests" class="main-sections">
+
+                    <h2>Interests</h2>
+
+                    <p>
+                        I enjoy creating 3D scenes using the 3D animation and modelling tool, Blender.
+                        My introduction to Blender resulted in me gaining an interest in animation both 3D and 2D animation.
+                        A few months after my initial introduction to Blender, I worked on a short animated video as part of a
+                        team for the animation competition, Animation12. The video ended up getting an award and can be viewed
+                        here:
+                    </p>
+                    <input type="button" value="Toggle Turing Video Visibility" id="btnTuring" onclick="toggleVideoVisibility(this)">
+                    <iframe id="vidTuring" class="bVideos" src="https://www.youtube.com/embed/NxREOaqARno" style="display:none" allowfullscreen></iframe>
+                    <p>
+                        Months after this, I also worked with a team at 3Dami 2012 to produce
+                        this short animated video:
+                    </p>
+                    <input type="button" value="Toggle 3Dami Video Visibility" id="btn3Dami" onclick="toggleVideoVisibility(this)">
+                    <iframe id="vid3Dami" class="bVideos" src="https://www.youtube.com/embed/_l34KV8Px3o" style="display:none" allowfullscreen></iframe>
+                    <p>
+                        I also enjoy playing multiple different genres
+                        of music on my acoustic guitar and I like reading any type of fiction although I do not currently have
+                        a favourite author.
+                    </p>
+
+                </section>
 
             </section>
 
@@ -137,8 +172,9 @@
 
         </main>
 
+        <!-- Javascript -->
         <script type="text/javascript">
-
+            // The method used by the buttons to toggle the visibility
             function toggleVideoVisibility(test) {
                 var videoNode;
                 switch (test) {

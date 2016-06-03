@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Float sidebar testing</title>
+
+    <style>
+        div {
+            background-color: aqua;
+            margin: 10px;
+        }
+
+        ul {
+            float: right;
+            background-color: red;
+        }
+
+        #clear-this {
+            /*clear: both;*/
+        }
+
+        .clearfix {
+            overflow: auto;
+        }
+
+    </style>
+</head>
+<body>
+    <div class="clearfix">
+        <ul>
+            <li>Lorem ipsum dolor sit amet, consectetur adipisicing elit.</li>
+            <li>Lorem ipsum dolor sit amet, consectetur adipisicing elit.</li>
+            <li>Lorem ipsum dolor sit amet, consectetur adipisicing elit.</li>
+            <li>Lorem ipsum dolor sit amet, consectetur adipisicing elit.</li>
+            <li>Lorem ipsum dolor sit amet, consectetur adipisicing elit.</li>
+        </ul>
+        <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Mollitia officia ratione provident, rem eveniet asperiores officiis eos nostrum doloremque beatae!</p>
+        <p id="clear-this">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Laborum, dolor.</p>
+
+    </div>
+</body>
+</html>
