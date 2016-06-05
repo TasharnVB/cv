@@ -1,13 +1,23 @@
+/* Apply border box to everything */
+html {
+    box-sizing: border-box;
+}
+
+*, *:before, *:after {
+    box-sizing: inherit;
+}
+/* Inheriting code used because of this article: https://css-tricks.com/inheriting-box-sizing-probably-slightly-better-best-practice/ */
+
+
 /* Entire body */
 body {
     font-family: sans-serif;
     margin: 0px;
-    /*background-color: #8D969B;*/
 }
 
 /* Main header */
 #main-header {
-    background-color: #80B3FF;
+    background-color: #B3D1FF;
     padding: 10px 10px;
     text-align: center;
 }
@@ -31,23 +41,57 @@ body {
 
 /* Main part of CV */
 #cv {
-    padding: 10px 20px 20px 20px;
+    padding: 15px 20px 20px 20px;
     background-color: #BFB7AE;
 }
 
 .main-sections {
     background-color: #E6E7E8;
-    padding: 5px 10px;
+    padding: 10px 15px;
+    margin-top: 10px;
+    border-radius: 20px;
+}
+
+.main-sections h2 {
+    margin: 5px 0px 10px 0px;
+    border-bottom: 1px solid #000000;
 }
 
 /* Personal Profile */
-#profile h2, p {
+#profile p {
     margin: 5px 0px;
 }
 
-#profile h2 {
-    margin: 5px 0px 10px 0px;
+/* Experience */
+
+
+/* Education */
+#education {
+    overflow: auto;
 }
+
+.education-sections {
+    width: 32%;
+    margin: 5px 5px;
+    background-color: #8D969B;
+    float: left;
+    padding: 10px 15px;
+    border-radius: 20px;
+}
+
+.education-sections h3 {
+    margin: 5px 0px 10px 0px;
+    /*border-bottom: 1px solid #000000;*/
+}
+
+/* This is where I got to */
+/******************************************/
+
+/* Interests */
+#interests {
+    clear: left;
+}
+
 
 input, textarea {
     display: block;
@@ -57,21 +101,21 @@ input, textarea {
     display: block;
 }
 
-#cv-nav ul {
+#cv-nav ul, #contact ul {
     list-style-type: none;
     margin: 0;
     padding: 0;
 }
 
-#cv-nav ul li {
+#cv-nav ul li, #contact ul li {
     display: inline;
 }
 
-#cv-nav ul li:after {
+#cv-nav ul li:after, #contactv ul li:after {
     content: " | ";
 }
 
-#cv-nav ul li:last-child:after {
+#cv-nav ul li:last-child:after, #contact ul li:last-child:after {
     content: "";
 }
 
