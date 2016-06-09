@@ -92,6 +92,16 @@ body {
     clear: left;
 }
 
+/* Footer */
+footer {
+    padding: 0px 20px;
+    background-color: #BFB7AE;
+}
+
+#contact, footer p {
+    margin: 0px;
+}
+
 
 input, textarea {
     display: block;
